@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Sange</h1>
+    <ul id="playlist"></ul>
+
+    <script>
+        const sange = ["The Prayer", "Mamacita", "Quintana Pt. 2", "DYSTI", "Don't Play", "Skyfall", "Zombies", "Sloppy Toppy", "Basement Freestyle", "Backyard"];
+
+        const liste = document.querySelector("ul");
+
+        sange.forEach(lavSangListe);
+
+        function lavSangListe(sange) {
+            console.log(sange)
+            liste.innerHTML += "<li>" + sange + "</li>";
+
+        }
+
+    </script>
+
+</body>
+
+</html>
